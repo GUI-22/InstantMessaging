@@ -1,0 +1,291 @@
+.message-container {
+    width: 100%;
+    display: flex;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 将搜索框和按钮分开 */
+  padding: 10px;
+  background-color: #f0f2f5; /* 设置背景颜色 */
+}
+
+.display-box {
+  flex:1;
+  background-color:rgba(0,0,0,0.02)
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="text"] {
+  padding: 4px;
+  border: 1px solid #ccc; /* 设置边框样式 */
+  border-radius: 4px; /* 设置边框圆角 */
+}
+
+.icon-button {
+  border: none;
+  border-radius: 50%; /* 将按钮形状变为圆形 */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+
+.message-list {
+  flex: 0 0  25%;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.message-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.message-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-list li:hover {
+  background-color: #e0e0e0;
+}
+
+.message-list li span {
+  display: block;
+}
+
+.unread-count {
+  color: rgba(0,0,0,0.5);
+  font-size:14px;
+}
+
+
+
+
+
+.chat-records {
+    height:100%;
+
+    .chat-messages {
+      overflow-y: auto;
+      height: 75%;
+      margin-top: 20px;
+    }
+
+    .message-input-container {
+      flex: 1;
+      width:100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.assist-message {
+  font-size: 12px;
+  color: #999;
+}
+
+
+.time {
+  margin-right:6px;
+  font-size: 12px;
+  color: #999;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.reply-message {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.cancel-button {
+  margin-top: 6px;
+  margin-left: 10px; /* 调整按钮与文字之间的间距 */
+}
+
+.cancel-button:hover {
+  cursor: pointer;
+}
+.own-message {
+  flex-direction: row-reverse;
+}
+
+.other-message {
+  flex-direction: row;
+}
+
+.own-message .message-info {
+  background-color: #b8e6ab;  /* 自己发送的消息气泡颜色 */
+  padding: 10px;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin-right:6px;
+}
+
+.other-message .message-info {
+  background-color: #fff; /* 其他人发送的消息气泡颜色 */
+  padding: 10px;
+  border-radius: 10px;
+  align-self: flex-start;
+  margin-left:6px;
+}
+
+
+
+
+
+.fetch-button {
+  height: 40px;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fetch-button:hover {
+  background-color: #007bff;
+}
+
+.message-input
+  display: flex
+  align-items: center
+  flex-shrink: 0; 
+
+  input[type="text"]
+    flex: 1
+    height: 40px
+    padding: 0 10px
+    border: 1px solid #ccc
+    border-radius: 5px
+    margin-right: 10px
+
+  button
+    height: 40px
+    border: none
+    background-color: #007bff
+    color: #fff
+    padding: 0 20px
+    border-radius: 5px
+    cursor: pointer
+
+  button:hover
+    background-color: #0056b3
+
+
+
+.ant-modal-content {
+  background-color: #f0f2f5; /* Light gray background */
+}
+
+/* Style for the group announcement */
+.group-announcement {
+  margin-top: 20px;
+}
+
+.group-announcement h3 {
+  margin-bottom: 10px;
+}
+
+.group-announcement p {
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Add border around the announcement */
+  padding: 10px;
+  background-color: #fff; /* White background */
+}
+
+/* Style for the buttons */
+.group-buttons {
+  margin-top: 20px;
+}
+
+.group-buttons button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f2f5; /* Light gray background */
+  color: #333; /* Text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.group-buttons button:hover {
+  background-color: #dcdcdc; /* Darker gray on hover */
+}
+
+.group-buttons button:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+.friend-list-container {
+  padding: 20px; /* Add padding for spacing */
+}
+
+.friend-group {
+  margin-bottom: 20px; /* Add margin between friend groups */
+}
+
+.friend-group h3 {
+  margin-bottom: 10px; /* Add margin below group name */
+}
+
+.friend-group ul {
+  list-style: none; /* Remove bullet points from the list */
+}
+
+.friend-group li {
+  display: flex; /* Display items in a row */
+  align-items: center; /* Align items vertically */
+}
+
+/* Optionally, you can style the selected friend differently */
+.friend-group li.selected {
+  color: blue; /* Change text color to blue */
+}
+
+.friend-group li img {
+  width: 50px; /* Set width of the image */
+  height: 50px; /* Set height of the image */
+  border-radius: 50%; /* Apply border radius for a circular shape */
+  margin-right: 10px; /* Add spacing between the image and text */
+}
