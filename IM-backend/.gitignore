@@ -1,0 +1,16 @@
+__pycache__/
+**/migrations/
+db.sqlite3
+media/
+
+.coverage
+coverage-reports/
+xunit-reports/
+
+.DS_Store
+.pytest_cache
+./test_output.txt
+./API_backend.md 
+./API_3_29.md
+
+test_output*.txt
